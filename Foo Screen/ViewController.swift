@@ -23,11 +23,11 @@ class ViewController: UIViewController {
 
     let defaults = UserDefaults.standard
     let indexUrl = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "index")!
-    var isStatusBarHidden = true
+    var isStatusBarHidden = false
     var webViewProgressObserver: NSKeyValueObservation?
 
     override var prefersStatusBarHidden: Bool { return isStatusBarHidden }
-    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .darkContent }
     override var prefersHomeIndicatorAutoHidden: Bool { return true }
 
     override func viewDidLoad() {
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dismissControlsView(_ sender: Any) {
-        isStatusBarHidden = true
+        isStatusBarHidden = false
         UIView.animate(withDuration: 0.25) {
             self.controlsView.alpha = 0.0
             self.addressUrlField.resignFirstResponder()

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZr-pu-dI6" customClass="FullScreenWKWebView" customModule="Foo_Screen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="30" width="414" height="866"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsInlineMediaPlayback="YES" allowsPictureInPictureMediaPlayback="NO">
@@ -40,7 +40,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="fbr-6G-bSm"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="url"/>
                                                     <connections>
@@ -120,7 +119,7 @@
                             <constraint firstAttribute="bottom" secondItem="Eld-YX-BtY" secondAttribute="bottom" id="JnP-MR-Lkw"/>
                             <constraint firstAttribute="bottom" secondItem="QZr-pu-dI6" secondAttribute="bottom" id="QYS-fA-lnp"/>
                             <constraint firstItem="QZr-pu-dI6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TrN-ZE-mdg"/>
-                            <constraint firstItem="QZr-pu-dI6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XKQ-hn-3i7"/>
+                            <constraint firstItem="QZr-pu-dI6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="XKQ-hn-3i7"/>
                             <constraint firstAttribute="trailing" secondItem="QZr-pu-dI6" secondAttribute="trailing" id="eYd-ws-tQ2"/>
                             <constraint firstItem="Eld-YX-BtY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l2R-6r-6YS"/>
                             <constraint firstAttribute="trailing" secondItem="Eld-YX-BtY" secondAttribute="trailing" id="mpg-ww-qf1"/>
